@@ -1,0 +1,90 @@
+<svg width="16" version="1.1" xmlns="http://www.w3.org/2000/svg" height="16" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs id="defs33224">
+<linearGradient id="linearGradient7330">
+<stop offset="0" style="stop-color:#4978a7" id="stop7332"/>
+<stop offset="0.31" style="stop-color:#345372" id="stop6195"/>
+<stop offset="0.3125" style="stop-color:#2e4964" id="stop7334"/>
+<stop offset="1" style="stop-color:#5ba0e5" id="stop7336"/>
+</linearGradient>
+<linearGradient gradientTransform="translate(120,-626)" xlink:href="#linearGradient7330" id="linearGradient6203" y1="669.5" x1="210" y2="712.5" x2="210" gradientUnits="userSpaceOnUse"/>
+<linearGradient gradientTransform="matrix(3,0,0,3,321,40)" xlink:href="#linearGradient7330" id="linearGradient6294" y1="1.1666666" x1="3" y2="15.5" gradientUnits="userSpaceOnUse" x2="3"/>
+<linearGradient gradientTransform="matrix(-1,0,0,-1,16,16)" xlink:href="#linearGradient3837" id="linearGradient3887" y1="15" x1="1" y2="0.96875" gradientUnits="userSpaceOnUse" x2="1"/>
+<linearGradient id="linearGradient3837">
+<stop offset="0" id="stop3839"/>
+<stop offset="1" style="stop-opacity:0" id="stop3841"/>
+</linearGradient>
+<linearGradient gradientTransform="matrix(-1,0,0,-1,16,16)" xlink:href="#linearGradient3837" id="linearGradient3891" y1="15" x1="15.0625" y2="1.03125" gradientUnits="userSpaceOnUse" x2="15"/>
+</defs>
+<g id="layer1">
+<g style="stroke:none">
+<g id="g4240" transform="translate(1.15e-6,-1.2e-7)">
+<g id="button-toggled-top" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="fill:#5787b7" id="path6200" d="m 330,46 0,3 30,0 0,-3 -30,0 z"/>
+<path style="opacity:.5;fill:#1e3246" id="path6202" d="m 330,43 0,3 30,0 0,-3 -30,0 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6204" d="m 330,40 0,3 30,0 0,-3 -30,0 z"/>
+</g>
+<g id="button-toggled-left" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="fill:url(#linearGradient6294)" id="path6208" d="m 327,49 0,30 3,0 0,-30 -3,0 z"/>
+<path style="opacity:.5;fill:#1b2d3f" id="path6210" d="m 324,49 0,30 3,0 0,-30 -3,0 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6212" d="m 321,49 0,30 3,0 0,-30 -3,0 z"/>
+</g>
+<g id="button-toggled-topleft" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="opacity:.22;fill:#27313a" id="path6216" d="m 324,43 -3,6 3,0 2,-4 z"/>
+<path style="opacity:.5;fill:#1b2d3f" id="path6218" d="m 326,45 -2,4 3,0 1,-2 -1,-1 z"/>
+<path style="fill:#5082b4" id="path6220" d="m 328,47 -1,2 3,0 z"/>
+<path style="fill:#5787b7" id="path6222" d="m 328,47 2,2 0,-3 z"/>
+<path style="opacity:.5;fill:#1e3246" id="path6224" d="m 326,45 1,1 1,1 2,-1 0,-3 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6226" d="m 324,43 2,2 4,-2 0,-3 z"/>
+</g>
+<g id="button-toggled-bottom" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="opacity:.6;fill:#121e2a" id="path6230" d="m 330,82 0,3 30,0 0,-3 -30,0 z"/>
+<path style="opacity:.2;fill:#181e24" id="path6232" d="m 330,85 0,3 30,0 0,-3 -30,0 z"/>
+<path style="fill:#3f6e9d" id="path6234" d="m 330,79 0,3 30,0 0,-3 -30,0 z"/>
+</g>
+<g id="button-toggled-bottomleft" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="opacity:.22" id="path6238" d="m 330,79 -2,2 2,1 z"/>
+<path style="opacity:.6;fill:#121e2a" id="path6240" d="m 327,82 -1,1 4,2 0,-3 -2,-1 z "/>
+<path style="opacity:.2;fill:#181e24" id="path6242" d="m 324,85 6,3 0,-3 -4,-2 z"/>
+<path style="fill:#4878a8" id="path6244" d="m 327,79 1,2 2,-2 z"/>
+<path style="opacity:.5;fill:#1b2d3f" id="path6246" d="m 324,79 2,4 1,-1 1,-1 -1,-2 z "/>
+<path style="opacity:.22;fill:#27313a" id="path6248" d="m 321,79 3,6 2,-2 -2,-4 z"/>
+<path style="fill:#3f6e9d" id="path6250" d="m 330,79 -2,2 2,1 z"/>
+</g>
+<g id="button-toggled-bottomright" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="opacity:.22" id="path6254" d="m 360,79 0,3 2,-1 z"/>
+<path style="opacity:.6;fill:#121e2a" id="path6256" d="m 360,82 0,3 4,-2 -1,-1 -1,-1 z "/>
+<path style="opacity:.2;fill:#181e24" id="path6258" d="m 360,85 0,3 6,-3 -2,-2 z"/>
+<path style="opacity:.22" id="path6260" d="m 360,79 2,2 1,-2 z"/>
+<path style="opacity:.5;fill:#121e2a" id="path6262" d="m 363,79 -1,2 1,1 1,1 2,-4 z "/>
+<path style="opacity:.1;fill:#181e24" id="path6264" d="m 366,79 -2,4 2,2 3,-6 z"/>
+<path style="fill:#4878a8" id="path6266" d="m 360,79 2,2 1,-2 z"/>
+<path style="fill:#3f6e9d" id="path6268" d="m 360,79 0,3 2,-1 z"/>
+</g>
+<g id="button-toggled-topright" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="fill:#5787b7" id="path6272" d="m 360,46 0,3 2,-2 z"/>
+<path style="opacity:.5;fill:#1e3246" id="path6274" d="m 360,43 0,3 2,1 1,-1 1,-1 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6276" d="m 360,40 0,3 4,2 2,-2 z"/>
+<path style="fill:#5082b4" id="path6278" d="m 362,47 -2,2 3,0 z"/>
+<path style="opacity:.5;fill:#1e3246" id="path6280" d="m 364,45 -1,1 -1,1 1,2 3,0 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6282" d="m 366,43 -2,2 2,4 3,0 z"/>
+</g>
+<g id="button-toggled-right" transform="matrix(0.33333333,0,0,0.33333333,-107,-13.333333)">
+<path style="fill:url(#linearGradient6203)" id="path6286" d="m 360,49 0,30 3,0 0,-30 -3,0 z"/>
+<path style="opacity:.5;fill:#182838" id="path6288" d="m 363,49 0,30 3,0 0,-30 -3,0 z"/>
+<path style="opacity:.22;fill:#27313a" id="path6290" d="m 366,49 0,30 3,0 0,-30 -3,0 z"/>
+</g>
+</g>
+<path style="opacity:.001" id="path3809" d="M 16,16 0,16 1,15 15,15 z"/>
+<path style="opacity:.001;fill:url(#linearGradient3891)" id="path3829" d="M 0,16 0,0 1,1 1,15 z"/>
+<path style="opacity:.001" id="path3833" d="M 16,0 0,0 1,1 15,1 z"/>
+<path style="opacity:.001;fill:url(#linearGradient3887)" id="path3835" d="M 16,16 16,0 15,1 15,15 z"/>
+<g style="fill:#41a0ff;fill-opacity:.784">
+<path style="opacity:.9" id="path3809-1" d="M 0,16 16,16 15,15 1,15 z"/>
+<path style="opacity:.9" id="path3829-4" d="M 16,16 16,0 15,1 15,15 z"/>
+<path style="opacity:.4" id="path3833-0" d="M 2,0 16,0 15,1 2,1 z"/>
+<path style="opacity:.9" id="path3835-2" d="M 0,16 0,2 1,2 1,15 z"/>
+<path style="opacity:.4" id="path3058" d="M 0,2 2,0 2.0108349,0.9739809 1,2 z"/>
+</g>
+</g>
+</g>
+</svg>

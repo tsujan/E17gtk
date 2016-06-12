@@ -1,0 +1,10 @@
+[X-GNOME-Metatheme]
+Name=E17gtk
+Type=X-GNOME-Metatheme
+Comment=A dark GTK theme for Enlightenment
+Encoding=UTF-8
+GtkTheme=E17gtk
+MetacityTheme=E17gtk
+IconTheme=gnome
+CursorTheme=Adwaita
+CursorSize=24
