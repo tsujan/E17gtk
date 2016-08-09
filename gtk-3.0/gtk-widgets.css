@@ -3,31 +3,13 @@
 
 	background-clip: padding-box;
 
-	/* Style properties */
-	-GtkButton-child-displacement-x: 1;
-	-GtkButton-child-displacement-y: 1;
-	-GtkButton-default-border: 0;
-	-GtkButton-image-spacing: 4;
-	-GtkButton-interior-focus: true;
-	-GtkToolButton-icon-spacing: 4;
-
 	-GtkTextView-error-underline-color: @error_color;
 
-	-GtkPaned-handle-size: 5;
-
-	-GtkCheckButton-indicator-size: 16;
-	-GtkCheckButton-indicator-spacing: 0;
-	-GtkCheckMenuItem-indicator-size: 12;
-
 	-GtkScrolledWindow-scrollbar-spacing: 0;
-	/* this is more stylish with this theme */
-	-GtkScrolledWindow-scrollbars-within-bevel: 0;
 
 	-GtkToolItemGroup-expander-size: 12;
-	-GtkExpander-expander-size: 12;
 	-GtkTreeView-expander-size: 13;
 	-GtkTreeView-horizontal-separator: 4;
-	-GtkMenuBar-shadow-type: none;
 
 	-GtkIMHtml-hyperlink-color: @link_color;
 	-GtkHTML-link-color: @link_color;
@@ -397,8 +379,6 @@ cursor-handle.bottom {
  ****************/
 progressbar {
 	padding: 0px;
-	-GtkProgressBar-min-horizontal-bar-height: 6;
-	-GtkProgressBar-min-vertical-bar-width: 6;
 	/* since gtk-3.14, these cause bad text positioning */
 	/*-GtkProgressBar-xspacing: 0;
 	-GtkProgressBar-yspacing: 0;*/
@@ -755,8 +735,6 @@ notebook > header tab button:hover:checked {
 	background-image: none;
 	border-image: none;
 	border-color: transparent;
-	-GtkButton-child-displacement-x: 0;
-	-GtkButton-child-displacement-y: 0;
 }
 
 notebook > header > tabs > arrow {
@@ -919,9 +897,6 @@ row {
  * GtkScale *
  ************/
 scale {
-	-GtkScale-slider-length: 16;
-	-GtkRange-slider-width: 20;
-	-GtkRange-trough-border: 0;
 	min-height: 10px;
 	min-width: 10px;
 }
@@ -1062,9 +1037,6 @@ combobox arrow {
 combobox {
 	/* align with side buttons */
 	padding: 0;
-
-	-GtkComboBox-arrow-scaling: 0.5;
-	-GtkComboBox-shadow-type: none;
 	color: @theme_fg_color;
 	text-shadow: 0 -1px black;
 }
@@ -1293,14 +1265,6 @@ spinbutton button:disabled {
 scrollbar {
 	background-image: none;
 	border-style: solid;
-	-GtkRange-trough-border: 0;
-	-GtkRange-arrow-scaling: 0.5;
-	-GtkRange-slider-width: 13;
-	-GtkRange-stepper-size: 16;
-	-GtkScrollbar-min-slider-length: 34; /* minimum size for the slider. sadly can't be in '.slider' where it belongs */
-
-	-GtkRange-stepper-spacing: 0;
-	-GtkRange-trough-under-steppers: 0;
 }
 
 scrollbar trough {
@@ -2042,9 +2006,6 @@ GtkOverlay.osd {
 GtkProgressBar.osd,
 progressbar.osd {
 	padding: 0;
-	-GtkProgressBar-xspacing: 0;
-	-GtkProgressBar-yspacing: 0;
-	-GtkProgressBar-min-horizontal-bar-height: 3px;
 }
 
 .osd GtkProgressBar.trough,
@@ -2177,7 +2138,6 @@ switch slider:disabled {
 GtkStatusbar {
 	padding: 5px;
 	color: @theme_fg_color;
-	-GtkStatusbar-shadow-type: none;
 }
 
 GtkStatusbar .frame {
