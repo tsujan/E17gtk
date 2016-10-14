@@ -2092,7 +2092,7 @@ assistant .sidebar {
  * GtkSwitch *
  *************/
 switch {
-	font: bold condensed;
+	font-weight: bold;
 }
 
 switch trough {
@@ -2464,7 +2464,7 @@ iconview.content-view.check:selected {
 
 	color: @theme_text_color;
 	text-shadow: 0 1px black;
-	/*font: bold;*/
+	/*font-weight: bold;*/
 }
 
 /*************
