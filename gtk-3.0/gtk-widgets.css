@@ -1438,6 +1438,29 @@ scrollbar.horizontal button.up {
  * Menus *
  *********/
 
+/* arrows (a ridiculous change in gtk-3.22) */
+menu menuitem arrow,
+.menu menuitem arrow {
+	min-height: 16px;
+	min-width: 16px;
+}
+menu menuitem arrow:dir(ltr),
+.menu menuitem arrow:dir(ltr) {
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+menu menuitem arrow:dir(rtl),
+.menu menuitem arrow:dir(rtl) {
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+}
+menu > arrow.top,
+.menu > arrow.top {
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+menu > arrow.bottom,
+.menu > arrow.bottom {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
 /* this controls the general appearance of the menubar */
 menubar {
 	background-image: none;
