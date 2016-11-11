@@ -14,7 +14,7 @@
    id="svg814"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="checkbox-menuitem-checked.svg">
+   sodipodi:docname="checkbox-menuitem-unchecked.svg">
   <defs
      id="defs816" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="35.841475"
-     inkscape:cx="3.9442414"
-     inkscape:cy="3.6211364"
+     inkscape:zoom="7.0508176"
+     inkscape:cx="-13.512553"
+     inkscape:cy="-20.865997"
      inkscape:document-units="px"
      inkscape:current-layer="layer1-96"
      showgrid="true"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,19 +77,14 @@
          id="layer1-96"
          inkscape:label="Layer 1"
          style="stroke:#717171;stroke-opacity:1">
-        <g
-           transform="translate(410.50739,765.05452)"
-           id="g16895"
-           style="stroke:#000000;stroke-opacity:1;enable-background:new">
-          <rect
-             transform="scale(1,-1)"
-             style="color:#000000;fill:none;stroke:#ffffff;stroke-width:1;stroke-opacity:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-             id="rect16897"
-             width="11.042357"
-             height="11.023263"
-             x="-409.50739"
-             y="-284.86218" />
-        </g>
+        <rect
+           y="-1049.9167"
+           x="1.0000048"
+           height="11.023263"
+           width="11.042357"
+           id="rect16897"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#ffffff;stroke-width:1;stroke-opacity:0.58823532;marker:none;enable-background:accumulate"
+           transform="scale(1,-1)" />
       </g>
     </g>
   </g>
