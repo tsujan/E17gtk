@@ -1586,7 +1586,7 @@ menuitem menu {
 	background-color: shade(@theme_selected_bg_color, 0.8);
 	background-image: linear-gradient(to bottom,
 	                                  shade(@theme_bg_color, 1.5),
-	                                  @theme_bg_color 6%,
+	                                  @theme_bg_color 11px,
 	                                  @theme_bg_color);
 
 	border-style: none;
