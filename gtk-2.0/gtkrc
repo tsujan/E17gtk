@@ -386,7 +386,7 @@ style "menu"
 			function	= BOX
 			detail		= "menu"
 			file		= "assets/menu.png"
-			border		= {4,4,0,0}
+			border		= {4,4,11,4}
 			stretch		= TRUE
 		}
 	}
