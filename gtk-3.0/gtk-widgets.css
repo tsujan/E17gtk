@@ -77,6 +77,7 @@ tooltip {
 	color: @theme_tooltip_fg_color;
 }
 
+tooltip.background,
 tooltip * {
 	background-color: @theme_tooltip_bg_color;
 	color: @theme_tooltip_fg_color;
@@ -153,7 +154,7 @@ textview text:selected,
 iconview text selection,
 textview text selection,
 flowbox flowboxchild:selected,
-spinbutton:not(.vertical) selection,
+spinbutton selection,
 entry selection {
 	background-color: @theme_selected_fg_color;
 	color: @theme_text_color;
@@ -167,9 +168,9 @@ textview text:selected:focus,
 .view text selection:focus,
 iconview text selection:focus,
 textview text selection:focus,
-spinbutton:not(.vertical) selection:focus,
+spinbutton selection:focus,
 entry selection:focus {
-	background-color: @theme_selected_bg_color;
+	background-color: @theme_selected_bg_color; /* used by Firefox for the border!! */
 	color: @theme_selected_fg_color;
 }
 
@@ -179,13 +180,13 @@ textview.view,
 textview.view:disabled,
 GtkHTML { /* For Evolution (not enough; see entries section below) */
 	background-color: @view_color;
-	color: @theme_main_color;
+	color: @theme_text_color;
 }
 
 /* This is for highlighting the current line in source views. */
 textview {
-	background-color: #D9D9D9; /* #dddddd; */
-	color: @theme_main_color;
+	background-color: #505050; /* #dddddd; */
+	color: @theme_text_color;
 }
 
 /* Exceptional views */
@@ -274,18 +275,28 @@ spinner:checked:disabled {
 /****************
  * Text Entries *
  ****************/
+spinbutton,
 entry {
 	background-color: @entry_color;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 0px;
-	padding: 2px 4px;
 	color: @theme_fg_color;
 	box-shadow: inset 0 6px alpha(black, 0.03),
 	            inset 0 5px alpha(black, 0.06),
 	            inset 0 3px alpha(black, 0.1),
 	            inset 0 2px alpha(black, 0.2),
 	            inset 1px 1px alpha(black, 0.3);
+}
+
+spinbutton:not(.vertical),
+entry {
+	padding: 2px 4px;
+	min-height: 20px;
+}
+
+spinbutton.vertical {
+	padding: 4px 2px;
 }
 
 /*.toolbar .entry {
@@ -300,6 +311,7 @@ entry:selected:focus {
 	background-color: @theme_selected_bg_color;
 }
 
+spinbutton:focus,
 entry:focus {
 	border-image: none;
 	border-style: solid;
@@ -307,12 +319,15 @@ entry:focus {
 	box-shadow: none;
 }
 
+spinbutton:disabled,
 entry:disabled {
 	background-color: @theme_bg_color;
 	color: @insensitive_fg_color;
 	box-shadow: none;
 }
 
+spinbutton:not(.vertical) progress,
+spinbutton:not(.vertical) progress:focus,
 entry progress,
 entry progress:focus {
 	margin-left: 2px;
@@ -351,7 +366,7 @@ textview.entry,
 textview entry,
 GtkHTML.entry {
 	background-color: @view_color;
-	color: @theme_main_color;
+	color: @theme_text_color;
 }
 
 /* for Totem's search */
@@ -602,9 +617,10 @@ calendar {
 
 frame,
 .frame {
-	color: lighter (@theme_fg_color);
+	color: @theme_fg_color;
 	border-style: solid;
 	border-width: 1px;
+	border-color: @theme_main_color; /* used by Firefox */
 	padding: 2px;
 	/*background-image: linear-gradient(to bottom,
 	                                  shade(@theme_bg_color, 1.33),
@@ -1243,6 +1259,17 @@ spinbutton button:checked {
 	padding: 0px 4px 0px 0px;
 }
 
+spinbutton.vertical button,
+spinbutton.vertical button:disabled,
+spinbutton.vertical button:hover,
+spinbutton.vertical button:active,
+spinbutton.vertical button:focus,
+
+spinbutton.vertical button:checked {
+	/* top right bottom left */
+	padding: 4px 0px 4px 0px;
+}
+
 spinbutton button,
 spinbutton button:focus {
 	color: shade(@theme_text_color, 0.75);
@@ -1259,12 +1286,46 @@ spinbutton button:disabled {
 	color: shade(@insensitive_fg_color, 0.7);
 }
 
+spinbutton:not(.vertical) button {
+	margin: 0px;
+	min-height: 16px;
+}
+
+spinbutton:not(.vertical) entry {
+	margin: 0px;
+	min-width: 28px;
+	background: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+spinbutton.vertical button {
+	margin: 0px;
+	min-height: 16px;
+	min-width: 16px;
+}
+
+spinbutton.vertical entry {
+	margin: 0px;
+	min-height: 26px;
+	background: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
 /**************
  * Scrollbars *
  **************/
 scrollbar {
 	background-image: none;
 	border-style: solid;
+	/* due to a bug, emacs' scrollbar can't
+	   have a transparent background  */
+	background-color: @theme_bg_color;
 }
 
 scrollbar trough {
@@ -2225,12 +2286,12 @@ iconview.view.cell:selected:focus {
 EMailDisplay,
 EPreviewPane entry {
 	background-color: @view_color;
-	color: @theme_main_color;
+	color: @theme_text_color;
 }
 
 /* make plain-text preview readable */
 EMailDisplay GtkExpander label {
-	color: @theme_main_color;
+	color: @theme_text_color;
 }
 
 EMailDisplay .expander:hover {
@@ -2575,9 +2636,58 @@ label {
 	text-shadow: none;
 }
 
-.sidebar.separator,
-.sidebar.separator:hover {
+/***********
+ * Sidebar *
+ ***********/
+.sidebar > separator,
+.sidebar  > separator:hover {
 	color: alpha(@frame_color, 0.6);
+}
+
+stacksidebar.sidebar row {
+	padding: 8px 4px;
+}
+
+stacksidebar.sidebar row > label {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+stacksidebar.sidebar row.needs-attention > .label {
+	background-size: 5px 5px, 0 0;
+}
+
+/****************
+ * File Chooser *
+ ****************/
+placessidebar row {
+	min-height: 24px;
+	padding: 0px;
+}
+
+placessidebar row > revealer {
+	padding: 0 10px;
+}
+
+placessidebar row image.sidebar-icon:dir(ltr) {
+	padding-right: 5px;
+}
+
+placessidebar row image.sidebar-icon:dir(rtl) {
+	padding-left: 5px;
+}
+
+placessidebar row label.sidebar-label:dir(ltr) {
+	padding-right: 5px;
+}
+
+placessidebar row label.sidebar-label:dir(rtl) {
+	padding-left: 5px;
+}
+
+/* label padding */
+revealer > box {
+	padding: 6px;
 }
 
 /**************************

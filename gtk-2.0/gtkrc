@@ -565,8 +565,8 @@ style "progressbar"
 	bg[SELECTED] = "#91B3D5"	# sets the progressbar color
 	fg[PRELIGHT] = "#ffffff"	# sets the text color inside the progressbar
 
-	GtkProgressBar::min-horizontal-bar-height = 5
-	GtkProgressBar::min-vertical-bar-width = 5
+	GtkProgressBar::min-horizontal-bar-height = 16
+	GtkProgressBar::min-vertical-bar-width = 16
 	GtkProgressBar::xspacing = 0
 	GtkProgressBar::yspacing = 0
 
@@ -1029,9 +1029,8 @@ style "misc-panel"
 
 style "view"
 {
-	# It's better not to have too bright text views.
-	base[NORMAL] = "#ECECEC"
-	text[NORMAL] = "#000000"
+	base[NORMAL] = "#303030"
+	text[NORMAL] = "#ffffff"
 }
 
 style "entry"

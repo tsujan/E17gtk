@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="12"
-   height="12"
-   id="svg27352"
+   width="16"
+   height="16"
+   id="svg814"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
-   sodipodi:docname="radio-menuitem-checked.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="radio-menuitem-unchecked.svg">
   <defs
-     id="defs27354" />
+     id="defs816" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,28 +24,31 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="22.197802"
-     inkscape:cx="-7.3168318"
-     inkscape:cy="8"
-     inkscape:current-layer="layer1"
-     showgrid="true"
-     inkscape:grid-bbox="true"
+     inkscape:zoom="19.25887"
+     inkscape:cx="5.4823646"
+     inkscape:cy="0.7350614"
      inkscape:document-units="px"
-     inkscape:window-width="1920"
-     inkscape:window-height="1025"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1">
+     inkscape:current-layer="g6305"
+     showgrid="true"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1555"
+     inkscape:window-height="984"
+     inkscape:window-x="365"
+     inkscape:window-y="316"
+     inkscape:window-maximized="0"
+     inkscape:snap-nodes="false"
+     inkscape:snap-bbox="true">
     <inkscape:grid
        type="xygrid"
-       id="grid2983"
+       id="grid4084"
        empspacing="5"
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
   <metadata
-     id="metadata27357">
+     id="metadata819">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -57,19 +60,34 @@
     </rdf:RDF>
   </metadata>
   <g
-     id="layer1"
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     transform="translate(0,-4)">
-    <path
-       sodipodi:type="arc"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298000000007;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
-       id="path5784-4"
-       sodipodi:cx="660.96808"
-       sodipodi:cy="255.0668"
-       sodipodi:rx="4.5078058"
-       sodipodi:ry="7.2937827"
-       d="m 665.47588,255.0668 a 4.5078058,7.2937827 0 1 1 -9.01561,0 4.5078058,7.2937827 0 1 1 9.01561,0 z"
-       transform="matrix(0.77643096,0,0,0.47986074,-507.19608,-112.89654)" />
+     id="layer1"
+     transform="translate(0,-1036.3622)">
+    <g
+       transform="translate(-1031,770.36221)"
+       id="g6305"
+       style="display:inline;enable-background:new">
+      <ellipse
+         id="path16919"
+         style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.58823529;marker:none;enable-background:accumulate"
+         cx="1039"
+         cy="274"
+         rx="6.5000019"
+         ry="6.4999981" />
+      <g
+         transform="translate(1033,264.49999)"
+         inkscape:label="Layer 1"
+         id="layer1-5">
+        <ellipse
+           transform="matrix(0.77643096,0,0,0.47986074,-507.19608,-112.89654)"
+           id="path5784-4"
+           style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.27423298;marker:none;enable-background:accumulate"
+           cx="660.96808"
+           cy="255.0668"
+           rx="4.5078058"
+           ry="7.2937827" />
+      </g>
+    </g>
   </g>
 </svg>
