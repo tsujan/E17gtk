@@ -73,6 +73,12 @@
 	border-radius: 0px;
 }
 
+/* gucharmap uses fallback colors */
+.gtkstyle-fallback {
+	color: @theme_fg_color;
+	background-color: @theme_bg_color;
+}
+
 tooltip {
 	padding: 4px 4px;
 	border-style: none;
@@ -2312,11 +2318,11 @@ EMailDisplay .expander:hover {
 }
 
 GtkHTML GtkExpander label {
-	color: #000000;
+	color: @theme_text_color;
 }
 
 GtkHTML:active {
-	color: #ffffff;
+	color: @theme_text_color;
 }
 
 EShellWindow *:active {
