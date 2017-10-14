@@ -620,14 +620,14 @@ levelbar.vertical block.empty {
  * Frames *
  **********/
 frame > border, /* 3.22.24 */
-frame,
+/*frame,*/
 .frame,
 calendar {
 	padding: 2px;
 }
 
 frame > border,
-frame,
+/*frame,*/
 .frame {
 	color: @theme_fg_color;
 	border-style: solid;
