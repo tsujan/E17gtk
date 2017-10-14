@@ -356,6 +356,7 @@ switch:checked {
     border-image: url("assets/switch-trough-active.svg") 1 / 1px stretch;
 }
 
+frame > border, /* 3.22.24 */
 frame,
 .frame,
 calendar.view {
