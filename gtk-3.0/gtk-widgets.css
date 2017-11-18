@@ -73,6 +73,10 @@
 	border-radius: 0px;
 }
 
+window.background.chromium {
+	background-color: #515152;
+}
+
 /* gucharmap uses fallback colors */
 .gtkstyle-fallback {
 	color: @theme_fg_color;
